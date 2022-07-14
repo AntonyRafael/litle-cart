@@ -1,13 +1,18 @@
 
 import styled from "styled-components";
 
-export const Home = styled.section`
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0.5rem 0;
-  margin: 0.5rem 1rem;
-  width: 11rem;
-  background: transparent;
-  color: white;
-  border: 2px solid white;
+export const HomeStyles = styled.main`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    padding: 20px;
+
+    button {
+      margin-bottom: 1rem;
+    }
+  }
 `;
