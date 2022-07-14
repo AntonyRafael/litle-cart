@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../components/Button";
 import Divider from "../../components/Divider";
 import AppLayout from "../../layout/AppLayout";
@@ -8,12 +9,16 @@ export default function Home() {
     <AppLayout>
       <HomeStyles>
         <div>
-          <Button fullWidth backgroundColor="#1E88E5">
-            Below R$ 10,00
-          </Button>
-          <Button fullWidth backgroundColor="#3775ab">
-            Over R$ 10,00
-          </Button>
+          <Link to="/below-ten">
+            <Button fullWidth backgroundColor="#1E88E5">
+              Below R$ 10,00
+            </Button>
+          </Link>
+          <Link to="/over-ten">
+            <Button fullWidth backgroundColor="#3775ab">
+              Over R$ 10,00
+            </Button>
+          </Link>
         </div>
       </HomeStyles>
     </AppLayout>
