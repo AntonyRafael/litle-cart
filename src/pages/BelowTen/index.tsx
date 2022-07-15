@@ -23,7 +23,7 @@ export default function BelowTenPage() {
     setTotalValue(belowTen.value);
   });
 
-  const isFreeShipping = 15; //totalValue / 100 > 10.0;
+  const isFreeShipping = totalValue / 100 > 10.0;
 
   return (
     <AppLayout>
