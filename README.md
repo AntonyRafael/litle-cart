@@ -4,6 +4,8 @@ This project simulates a shopping cart page, containing two screens, one simulat
 
 The rule for free shipping and the purchase exceeds the value of R$ 10,00 (BRL).
 
+Made using React, Typescript, Vite, Styled Components, React Router.
+
 # Using project
 
 For use this project, first install the dependencies, using this command in your terminal.
@@ -16,3 +18,7 @@ After, start the project with:
 ```
 npm run dev 
 ```
+
+# Preview
+
+The preview of this site can be seen [here](https://litle-cart.netlify.app/)
