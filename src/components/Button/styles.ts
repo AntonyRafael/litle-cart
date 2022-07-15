@@ -13,7 +13,7 @@ export const ButtonStyles = styled.button`
 
   &:hover {
     cursor: pointer;
-    filter: saturate(1.5) brightness(1.2);
+    filter: saturate(1.2) brightness(1.2);
   }
 
   &.disabled {

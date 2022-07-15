@@ -8,6 +8,7 @@ interface IButtonProps {
   fullWidth?: boolean;
   textColor?: string;
   tabIndex?: number;
+  height?: number;
   disabled?: boolean;
   backgroundColor?: string;
 }
@@ -15,13 +16,14 @@ interface IButtonProps {
 const Button = ({
   children,
   onClick,
-  className="",
+  className = "",
   rounded,
   fullWidth,
   textColor,
   backgroundColor,
   tabIndex,
   disabled,
+  height,
   ...props
 }: IButtonProps) => {
   return (
@@ -32,7 +34,8 @@ const Button = ({
         borderRadius: rounded ? "25px" : "8",
         width: fullWidth ? "100%" : "auto",
         color: textColor ? textColor : "white",
-        backgroundColor: backgroundColor ? backgroundColor : "#1C575E",
+        height: height ? height : "auto",
+        backgroundColor: backgroundColor ? backgroundColor : "#1E88E5",
       }}
       onClick={onClick}
       {...props}
